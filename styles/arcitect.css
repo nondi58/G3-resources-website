@@ -1,80 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Work+Sans:ital,wght@0,500;0,600;0,700;0,800;1,700&display=swap');
+
+.btn-primary{
+    border-radius: 8px;
+    color: #FFF;
+background: #FF900E;
+padding: 20px 25px;
+font-size: 1.5rem;
+border: 0;
+}
+
 * {
     font-family: 'Open Sans', sans-serif;
-    font-family: 'Yeseva One', cursive;
+    font-family: 'Work Sans', sans-serif;
+
 
 }
-
-header {
+header{
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
-    
 }
-
-nav {
+nav{
     display: flex;
     justify-content: space-between;
-    justify-items: center;
-    padding: 30px;
-}
-
-nav>ul {
-    display: flex;
     align-items: center;
 }
-
-nav li {
-    list-style: none;
-    align-items: center;
-}
-
-nav li a {
-    justify-content: space-around;
-    text-decoration: none;
-    margin-right: 30px;
-    color:  #424242;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 500;
-   
-}
-
-.header-title {
-    color:  #131313;
-    text-align: center;
-    font-size: 45px;
+.nav-title{
+    font-size: 3rem;
     font-weight: 700;
-    
+    color: #131313;
+}
+nav>ul{
+    display: flex;
+}
+nav li{
+list-style: none;
+margin-right: 30px;
+font-weight: 500;
+font-size: 1rem;
+}
+nav li a{
+    text-decoration: none;
+    color: #424242;
 
 }
-/* navbar-part-end */
-/* banner-part */
-.banner{
-   
-}
-.banner-container{
+/* banner-styles */
+.banner-content{
+    max-width: 800px;
     text-align: center;
     margin: 0 auto;
-    max-width: 800px;
-   
 
 }
 .banner-title{
-    color:  #131313;
-    text-align: center;
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: 700;
-
+    color: #131313;
 }
 .banner-description{
-    color:  #727272;
-text-align: center;
-font-size: 16px;
-font-weight: 400;
-
+    color: #727272;
 }
-.btn-primary{
-    border-radius: 8px;
-background: #FF900E;
-justify-items: center;
-margin-left: 50px;
+.banner img{
+    width: 100%;
+    margin-top: 25px;
+}
+/* for-phone */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
+}
+/* ipad */
+@media screen and (min-width: 576px) and (max-width: 960px)  {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
 }
